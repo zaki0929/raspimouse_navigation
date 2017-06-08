@@ -1,6 +1,7 @@
 <launch>
   <master auto="start"/>
 
+  <arg name="scan_topic" default="/scan" />
   <arg name="odom_topic" default="/odom" />
 
   <param name="pub_map_odom_transform" value="true"/> 
