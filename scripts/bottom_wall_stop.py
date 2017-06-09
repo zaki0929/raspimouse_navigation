@@ -6,7 +6,7 @@ from pimouse_ros.msg import LightSensorValues
 
 class BottomWallStop():
     def __init__(self):
-        self.cmd_vel = rospy.Publisher('/cmd_vel', Twist, queue_size=10)
+        self.cmd_vel = rospy.Publisher('/cmd_vel', Twist, queue_size=1)
 
         self.sensor_values = LightSensorValues()
         rospy.Subscriber('/lightsensors', LightSensorValues, self.callback)
@@ -19,8 +19,10 @@ class BottomWallStop():
         data = Twist()
 
         while not rospy.is_shutdown():
-            data.linear.x = 0.0 if self.sensor_values.sum_all > 500
-            self.cmd_vel.publish(data)
+            if self.sensor_values.sum_all > 500:
+                data.linear.x = 0.0
+                data.angular.z = 0.0
+                self.cmd_vel.publish(data)
             rate.sleep()
 
 if __name__ == '__main__':
