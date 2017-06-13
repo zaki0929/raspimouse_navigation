@@ -116,7 +116,7 @@ class Motor():
         odom.twist.twist.linear.y = 0.0
         odom.twist.twist.angular.z = self.vth
 
-        self.pub_odom.publish(odom_frame)
+        self.pub_odom.publish(odom)
 
         self.last_time = self.cur_time
 
