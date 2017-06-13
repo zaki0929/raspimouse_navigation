@@ -1,21 +1,21 @@
 TrajectoryPlannerROS:
  
-    acc_lim_x: 0.5			#x方向の最大加速度
-    acc_lim_theta: 1.0			#最大角加速度	
+    acc_lim_x: 0.5
+    acc_lim_theta: 1.0
 
-    max_vel_x: 0.25			#x方向の最大速度
-    min_vel_x: 0.0			#x方向の最小速度
-    max_vel_theta: 1.0			#最大角速度
-    min_vel_theta: -1.0			#最小角速度
-    min_in_place_vel_theta: 0.5		#目的地に到着したロボットが角度を合わせる時の最小角速度
+    max_vel_x: 0.25
+    min_vel_x: 0.0	
+    max_vel_theta: 1.0
+    min_vel_theta: -1.0
+    min_in_place_vel_theta: 0.5
  
-    holonomic_robot: false		#ホロノミックなロボットかどうか
+    holonomic_robot: false
  
-    yaw_goal_tolerance: 0.05		#目標地点に到達したと判定する目標角度と実際の角度の差
-    xy_goal_tolerance: 0.1		#目標地点に到達したと判定する目標地点と実際の地点の差
+    yaw_goal_tolerance: 0.05
+    xy_goal_tolerance: 0.1
 
-    pdist_scale: 2.0			#この値を大きくするとパスに近づく経路が生成される 
-    gdist_scale: 0.8			#この値を大きくするとゴールに近づく経路が生成される
-    occdist_scale: 0.01			#この値を大きくすると障害物をより大きく回避するようなパスが生成される
+    pdist_scale: 2.0
+    gdist_scale: 0.8
+    occdist_scale: 0.01
  
     meter_scoring: true
