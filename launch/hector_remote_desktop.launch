@@ -21,7 +21,8 @@
     <rosparam file="$(find navigation2d_example)/param/move_base_params.yaml" command="load"/>
   </node>
 
-  <node pkg="roomba_500_series" type="roomba500_light_node" respawn="false" name="roomba500_light_node" output="screen"/>
+  <!-- <node pkg="roomba_500_series" type="roomba500_light_node" respawn="false" name="roomba500_light_node" output="screen"/> -->
+
 
   <include file="$(find navigation2d_example)/launch/default_mapping.launch"> 
     <arg name="base_frame" value="base_frame"/>
