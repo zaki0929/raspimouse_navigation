@@ -6,7 +6,7 @@ Panels:
       Expanded:
         - /Global Options1
         - /Status1
-        - /Map2
+        - /Map1
       Splitter Ratio: 0.5
     Tree Height: 620
   - Class: rviz/Selection
@@ -135,7 +135,7 @@ Visualization Manager:
       Value: true
     - Alpha: 0.699999988
       Class: rviz/Map
-      Color Scheme: map
+      Color Scheme: costmap
       Draw Behind: true
       Enabled: true
       Name: Map
