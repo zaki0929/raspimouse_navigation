@@ -7,7 +7,8 @@ Panels:
         - /Global Options1
         - /Status1
         - /Map1
-        - /LocalCostmap1
+        - /GlobalPath1
+        - /LocalPath1
       Splitter Ratio: 0.5
     Tree Height: 620
   - Class: rviz/Selection

@@ -1,0 +1,12 @@
+<!-- This launch file does not work yet properly. -->
+<launch>
+  <master auto="start"/>
+
+  <node pkg="rviz" type="rviz" name="rviz"/>
+
+  <!-- Run the map server -->
+  <arg name="map_file" default="$(find raspimouse_navigation)/map/map.yaml"/>
+  <node name="map_server" pkg="map_server" type="map_server" args="$(arg map_file)" />
+
+  <include file="$(find turtlebot_navigation)/launch/amcl_demo.launch"/>
+</launch>

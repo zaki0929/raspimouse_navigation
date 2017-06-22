@@ -1,0 +1,9 @@
+<launch>
+  <node pkg="raspimouse_navigation" name="enable_motors" type="enable_motors.py" required="true" />
+  <!-- <node pkg="raspimouse_navigation" name="bottom_wall_stop" type="bottom_wall_stop.py" required="true"/> -->
+  <!-- <node pkg="pimouse_ros" name="lightsensors" type="lightsensors.py" required="true" /> -->
+  <node pkg="pimouse_slam" name="motors" type="motors.py" required="true"/>
+  <node pkg="urg_node" name="urg_node" type="urg_node" required="true">
+    <param name="frame_id" value="base_frame"/>
+  </node>
+</launch>
