@@ -1,5 +1,7 @@
 robot_radius: 0.07
-map_type: voxel
+#map_type: voxel
+
+footprint: [[-0.20, 0.39], [0.94, 0.39], [0.94, -0.39], [-0.20, -0.39]]
 
 obstacle_layer:
   enabled: true
@@ -7,25 +9,10 @@ obstacle_layer:
   raytrace_range: 2.5
   publish_voxel_map: true
 
-  laser_scan_sensor: {sensor_frame: laser, data_type: LaserScan, topic: scan, marking: true, clearing: true}
   observation_sources: laser_scan_sensor
-#  laser_scan_sensor:
-#    sensor_frame: laser
-#    data_type: LaserScan
-#    topic: scan
-#    marking: true
-#    clearing: true
-
-#global_inflation_layer:
-#  enabled: true
-#  cost_scaling_factor: 5.0
-#  inflation_radius: 0.30
-
-inflation_layer:
-  enabled: true
-  cost_scaling_factor: 0.5
-  inflation_radius: 0.01
-
-static_layer:
-  enabled: true
-#  map_topic: map
+  laser_scan_sensor:
+    sensor_frame: laser
+    data_type: LaserScan
+    topic: scan
+    marking: true
+    clearing: true
