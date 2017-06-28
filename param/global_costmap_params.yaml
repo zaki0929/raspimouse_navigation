@@ -10,16 +10,5 @@ global_costmap:
 
   transform_tolerance: 0.5
 
-  global_inflation_layer:
-    enabled: true
-    cost_scaling_factor: 5.0
-    ation_radius: 0.30
-
-  static_layer:
-    enabled: true
-    map_topic: map
-
-  plugins:
-    - {name: obstacle_layer, type: "costmap_2d::VoxelLayer"}
-    - {name: global_inflation_layer, type: "costmap_2d::InflationLayer"}
-    - {name: static_layer, type: "costmap_2d::StaticLayer"}
+  cost_scaling_factor: 5.0
+  infration_radius: 0.10

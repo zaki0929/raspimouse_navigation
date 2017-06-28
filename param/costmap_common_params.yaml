@@ -1,18 +1,15 @@
 robot_radius: 0.07
-#map_type: voxel
+map_type: voxel
 
-footprint: [[-0.20, 0.39], [0.94, 0.39], [0.94, -0.39], [-0.20, -0.39]]
-
-obstacle_layer:
-  enabled: true
-  obstacle_range: 2.0
-  raytrace_range: 2.5
-  publish_voxel_map: true
-
-  observation_sources: laser_scan_sensor
-  laser_scan_sensor:
-    sensor_frame: laser
-    data_type: LaserScan
-    topic: scan
-    marking: true
-    clearing: true
+obstacle_range: 2.0
+raytrace_range: 2.5
+publish_voxel_map: true
+observation_sources: laser_scan
+laser_scan:
+  sensor_frame: laser
+  data_type: LaserScan
+  topic: scan
+  marking: true
+  clearing: true
+  min_obstacle_height: -0.10
+  max_obstacle_height: 2.0
