@@ -2,8 +2,6 @@
 <launch>
   <master auto="start"/>
 
-  <node name="costmap_node" pkg="costmap_2d" type="costmap_2d_node" output="screen"/>
-
   <node pkg="rviz" type="rviz" name="rviz" args="-d $(find raspimouse_navigation)/config/rviz_config.rviz"/>
 
   <!-- Run the map server -->
