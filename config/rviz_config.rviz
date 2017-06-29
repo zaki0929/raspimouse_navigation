@@ -3,10 +3,7 @@ Panels:
     Help Height: 78
     Name: Displays
     Property Tree Widget:
-      Expanded:
-        - /Global Options1
-        - /Status1
-        - /LocalPath1
+      Expanded: ~
       Splitter Ratio: 0.5
     Tree Height: 592
   - Class: rviz/Selection
