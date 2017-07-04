@@ -9,6 +9,5 @@ global_costmap:
   rolling_window: false
 
   transform_tolerance: 0.5
-
   cost_scaling_factor: 5.0
   infration_radius: 0.10
