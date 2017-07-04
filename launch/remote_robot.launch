@@ -2,6 +2,6 @@
   <node pkg="raspimouse_navigation" name="enable_motors" type="enable_motors.py" required="true" />
   <node pkg="pimouse_slam" name="motors" type="motors.py" required="true"/>
   <node pkg="urg_node" name="urg_node" type="urg_node" required="true">
-    <param name="frame_id" value="laser"/>
+    <param name="frame_id" value="base_link"/>
   </node>
 </launch>
