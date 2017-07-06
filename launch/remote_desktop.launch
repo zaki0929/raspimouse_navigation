@@ -6,9 +6,7 @@
 
   <!-- Run the map server -->
   <arg name="map_file" default="$(find raspimouse_navigation)/map/map.yaml"/>
-  <node name="map_server" pkg="map_server" type="map_server" args="$(arg map_file)">
-    <param name="frame_id" value="odom"/>
-  </node>
+  <node name="map_server" pkg="map_server" type="map_server" args="$(arg map_file)"/>
 
   <!--- Run Move Base -->
   <include file="$(find raspimouse_navigation)/launch/run_move_base.launch"/>

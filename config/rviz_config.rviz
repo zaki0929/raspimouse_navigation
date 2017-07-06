@@ -188,7 +188,7 @@ Visualization Manager:
   Enabled: true
   Global Options:
     Background Color: 48; 48; 48
-    Fixed Frame: base_link
+    Fixed Frame: map
     Frame Rate: 30
   Name: root
   Tools:
@@ -263,5 +263,5 @@ Window Geometry:
   Views:
     collapsed: false
   Width: 1855
-  X: 206
-  Y: 97
+  X: 65
+  Y: 24
