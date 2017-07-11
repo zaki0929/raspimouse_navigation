@@ -14,5 +14,5 @@ local_costmap:
 
   transform_tolerance: 0.5
 
-  cost_scaling_factor:  0.5
-  inflation_radius:     0.05
+  cost_scaling_factor: 0.5
+  inflation_radius: 0.05

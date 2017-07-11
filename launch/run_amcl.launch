@@ -1,7 +1,7 @@
 <!-- This launch file does not work yet properly. -->
 <launch>
-  <!--- Run AMCL -->
-  <!--<include file="$(find amcl)/examples/amcl_diff.launch" />-->
+  <!-- Run AMCL -->
+  <!-- <include file="$(find amcl)/examples/amcl_diff.launch" /> -->
   <node pkg="amcl" type="amcl" name="amcl" output="screen">
     <!-- Publish scans from best pose at a max of 10 Hz -->
     <param name="odom_model_type" value="diff"/>
