@@ -1,4 +1,3 @@
-<!-- This launch file does not work yet properly. -->
 <launch>
   <master auto="start"/>
 

@@ -56,6 +56,7 @@ Visualization Manager:
       Name: Map
       Topic: /map
       Unreliable: false
+      Use Timestamp: false
       Value: true
     - Class: rviz/TF
       Enabled: true
@@ -63,6 +64,8 @@ Visualization Manager:
       Frames:
         All Enabled: true
         base_link:
+          Value: true
+        map:
           Value: true
         odom:
           Value: true
@@ -72,9 +75,10 @@ Visualization Manager:
       Show Axes: true
       Show Names: true
       Tree:
-        odom:
-          base_link:
-            {}
+        map:
+          odom:
+            base_link:
+              {}
       Update Interval: 0
       Value: true
     - Alpha: 1
@@ -122,6 +126,7 @@ Visualization Manager:
         X: 0
         Y: 0
         Z: 0
+      Pose Color: 255; 85; 255
       Pose Style: None
       Radius: 0.0299999993
       Shaft Diameter: 0.100000001
@@ -144,6 +149,7 @@ Visualization Manager:
         X: 0
         Y: 0
         Z: 0
+      Pose Color: 255; 85; 255
       Pose Style: None
       Radius: 0.0299999993
       Shaft Diameter: 0.100000001
@@ -159,6 +165,7 @@ Visualization Manager:
       Name: GlobalCostmap
       Topic: /move_base/global_costmap/costmap
       Unreliable: false
+      Use Timestamp: false
       Value: true
     - Alpha: 0.699999988
       Class: rviz/Map
@@ -168,6 +175,7 @@ Visualization Manager:
       Name: LocalCostmap
       Topic: /move_base/local_costmap/costmap
       Unreliable: false
+      Use Timestamp: false
       Value: true
     - Alpha: 1
       Arrow Length: 0.300000012
@@ -175,7 +183,7 @@ Visualization Manager:
       Axes Radius: 0.00999999978
       Class: rviz/PoseArray
       Color: 255; 25; 0
-      Enabled: true
+      Enabled: false
       Head Length: 0.0700000003
       Head Radius: 0.0299999993
       Name: PoseArray
@@ -184,7 +192,7 @@ Visualization Manager:
       Shape: Arrow (Flat)
       Topic: /particlecloud
       Unreliable: false
-      Value: true
+      Value: false
   Enabled: true
   Global Options:
     Background Color: 48; 48; 48
@@ -216,17 +224,17 @@ Visualization Manager:
         Swap Stereo Eyes: false
         Value: false
       Focal Point:
-        X: 4.92155838
-        Y: -2.40476537
-        Z: -4.47319031
+        X: 6.25389385
+        Y: 1.52684677
+        Z: -3.41805148
       Focal Shape Fixed Size: true
       Focal Shape Size: 0.0500000007
       Name: Current View
       Near Clip Distance: 0.00999999978
-      Pitch: 0.985397935
+      Pitch: 1.55979633
       Target Frame: <Fixed Frame>
       Value: Orbit (rviz)
-      Yaw: 0.44539836
+      Yaw: 3.1385839
     Saved:
       - Class: rviz/Orbit
         Distance: 10
