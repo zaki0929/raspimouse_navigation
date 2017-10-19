@@ -1,0 +1,16 @@
+<launch>
+  <master auto="start"/>
+  <!-- Run visualise tools -->
+  <node pkg="rviz" type="rviz" name="rviz" args="-d $(find raspimouse_navigation)/config/rviz_config.rviz"/>
+  <node name="alpha_plot" pkg="rqt_plot" type="rqt_plot" args="/alpha/data /alpha_th/data" />
+
+  <!-- Run Map Server -->
+  <arg name="map_file" default="$(find raspimouse_navigation)/map/map.yaml"/>
+  <node name="map_server" pkg="map_server" type="map_server" args="$(arg map_file)" output="screen"/>
+
+  <!-- Run Move Base -->
+  <include file="$(find raspimouse_navigation)/launch/run_move_base.launch"/>
+
+  <!-- Run Amcl -->
+  <include file="$(find raspimouse_navigation)/launch/run_er_amcl.launch"/>
+</launch>
