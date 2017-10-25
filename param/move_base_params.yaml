@@ -12,7 +12,6 @@ oscillation_distance: 0.2
 base_local_planner: "base_local_planner/TrajectoryPlannerROS"
 #base_local_planner: "dwa_local_planner/DWAPlannerROS"
 
-#clearing_rotation_allowed: false
+clearing_rotation_allowed: false
 
-#recovery_behaviors: "conservative_reset"
-recovery_behaviors: "aggressive_reset"
+#recovery_behaviors: [{name: conservative_reset, type: clear_costmap_recovery/ClearCostmapRecovery}, {name: rotate_recovery, type: rotate_recovery/RotateRecovery}, {name: aggressive_reset, type: clear_costmap_recovery/ClearCostmapRecovery}]
